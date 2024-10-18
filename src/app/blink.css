@@ -1,0 +1,30 @@
+/* styles.css */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s infinite;
+}
+
+.blinking-border {
+    position: absolute;
+    inset: 0;
+    border: 4px solid gray;
+    /* Adjust color as needed */
+    border-radius: 50%;
+    /* Rounded effect */
+    z-index: -1;
+    /* Make sure it stays behind the icon */
+}
