@@ -7,7 +7,6 @@ import ballon_vector from "../../assets/Vector _ballon.png";
 import BenefitCards from '@/Components/BenefitCards';
 import Footer from '@/Components/Footer';
 import geofyapp from "../../assets/geofy_app.png";
-import AppStore from "../../assets/App store.png";
 import PlayStore from "../../assets/Playstore.png";
 import TestimonialCard from "../../assets/Mask group.png";
 import TestimoniasCards from '@/Components/TestimoniasCards';
