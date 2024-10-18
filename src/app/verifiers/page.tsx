@@ -85,7 +85,7 @@ const page: React.FC = () => {
                     <div className=' grid lg:grid-cols-2 grid-cols-1 lg:px-48 px-4 lg: mt-8 lg:mt-28'>
                         <div className=' lg:pl-36 pl-36'>
                             <Image src={geofyapp} alt='no image' width={200} height={200} />
-                            <div className=' lg:grid place-items-center lg:pr-14 pl-12'>
+                            <div className=' lg:grid place-items-center lg:pr-24 pl-12'>
                                 <div className=''>
                                     <Image height={30} alt='no image' src={PlayStore} />
                                 </div>

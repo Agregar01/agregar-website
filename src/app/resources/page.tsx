@@ -23,19 +23,19 @@ const page = () => {
             blogImage: bankFraud,
             date: "September 17, 2024",
             blogTitle: "Staff involvement in Bank fraud rises 46%, losses hit GH¢63m in 2023 – BoG Report",
-            route: ""
+            route: "https://citinewsroom.com/2024/09/staff-related-fraud-in-banks-and-sdis-rises-by-46-bog-report/"
         },
         {
             blogImage: AntiFraud,
             date: "September 17, 2024",
             blogTitle: "A person with bad integrity will still steal if you pay them a million’ – John Awuah on bankers’ involvement in bank frauds",
-            route: ""
+            route: "https://citinewsroom.com/2024/09/staff-related-fraud-in-banks-and-sdis-rises-by-46-bog-report/"
         },
         {
             blogImage: Justice_Gavel,
             date: "September 19, 2024",
             blogTitle: "Identify theft: Court orders Bolt Holdings OU pay GHC1.9 million compensation",
-            route: ""
+            route: "https://gna.org.gh/2024/09/identity-theft-court-orders-bolt-holdings-ou-to-pay-ghc1-9-million-compensation/#google_vignette"
         },
 
     ]
@@ -155,7 +155,9 @@ const page = () => {
                 <div className=' grid lg:grid-cols-3 grid-cols-1 gap-5 lg:gap-10 pt-10'>
                     {
                         BlogData.map((list: any) => {
-                            return (<BlogCards date={list.date} blogTitle={list.blogTitle} blogImage={list.blogImage} />);
+                            return (<BlogCards date={list.date} blogTitle={list.blogTitle} blogImage={list.blogImage} onClick={() => {
+                                window.open(`${list.route}`, '_blank');
+                            }} />);
                         })
                     }
 
@@ -164,7 +166,7 @@ const page = () => {
                 </div>
                 <div className=' grid grid-cols-10'>
                     <div className=' col-span-10 lg:col-span-7'>
-                        <div className=' pt-8 lg:pt-36 pb-7 lg:pb-10'>
+                        <div className=' pt-8  lg:pt-24 pb-7 lg:pb-10'>
                             <h1 className=' text-3xl lg:text-4xl text-secondary font-bold'>FAQ<span className=' text-2xl font-extrabold'>S</span></h1>
                         </div>
                         {

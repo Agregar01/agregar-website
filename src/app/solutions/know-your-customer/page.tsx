@@ -217,7 +217,7 @@ const page = () => {
 
                     <div className=' col-span-10 lg:col-span-4'>
                         <div className=' space-y-4'>
-                            <h1 className=' font-bold text-secondary text-2xl lg:text-3xl'>Validar</h1>
+                            <h1 className=' font-bold text-secondary text-2xl lg:text-3xl'>Validar<sup>™</sup></h1>
                             <p className=' text-textcolor'>Validar is our all-encompassing risk management solution created to minimize risks connected with customer, vendor, and business onboarding. Engineered to comply with all regulatory standards, Validar includes built-in features such as fraud detection monitoring, credit scoring, consumer insicghts and analytics, as well as AML, Fraud, and Terrorist screening components. By doing so, Validar guarantees protection for both consumers and institutions, all while ensuring regulatory compliance.</p>
                             <div className=' flex items-center space-x-4 cursor-pointer'>
                                 <h1 className=' text-primary'>Learn More</h1>

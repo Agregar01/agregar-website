@@ -127,12 +127,12 @@ const page = () => {
                         </div>
                     </div>
                     <div>
-                        <IndustriesPointCards2 header='Optimize Your Third-Party Due Diligence for Effective Telecom Operations' description="Enhance the efficiency of your telecom operations by collaborating with reputable distributors, resellers, and infrastructure companies.
+                        <IndustriesPointCards2 showdescription header='Optimize Your Third-Party Due Diligence for Effective Telecom Operations' description="Enhance the efficiency of your telecom operations by collaborating with reputable distributors, resellers, and infrastructure companies.
 " />
 
                     </div>
                     <div>
-                        <IndustriesPointCards2 header='Due Diligence for Third Parties' description="Conduct thorough due diligence on your authorized partners and resellers to ensure credibility and compliance. This includes assessing distributors, authorized resellers, broadband service providers, infrastructure and construction firms, contractors, vendors, suppliers, and equipment manufacturers.
+                        <IndustriesPointCards2 showdescription header='Due Diligence for Third Parties' description="Conduct thorough due diligence on your authorized partners and resellers to ensure credibility and compliance. This includes assessing distributors, authorized resellers, broadband service providers, infrastructure and construction firms, contractors, vendors, suppliers, and equipment manufacturers.
 Implement robust third-party risk assessment and management practices through comprehensive due diligence processes.
 Reduce risks by verifying credentials, financial stability, and regulatory compliance.
 Proactively identify potential business risks and maintain a reliable network of partners.
@@ -140,7 +140,7 @@ Proactively identify potential business risks and maintain a reliable network of
 
                     </div>
                     <div>
-                        <IndustriesPointCards2 header='Employee Screening' description="Your Workforce Defines Your Success, Screen Diligently
+                        <IndustriesPointCards2 showdescription header='Employee Screening' description="Your Workforce Defines Your Success, Screen Diligently
 Guarantee the excellence and trustworthiness of your professional staff with meticulous screening solutions designed for engineers, architects, sales professionals, and customer service representatives.
 Authenticate the employment background, encompassing job roles, responsibilities, and tenure, to evaluate candidates' experience and suitability.
 Validate educational credentials, degrees, certifications, and professional affiliations to confirm expertise and credibility.

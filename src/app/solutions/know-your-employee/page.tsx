@@ -331,29 +331,29 @@ const page: React.FC = () => {
                             <div className=' space-y-5 mt-12'>
 
                                 <div className=' space-y-3'>
-                                    <div className=' flex  space-x-4'>
-                                        <Image height={14} src={kye_dot} alt='' />
+                                    <div className='space-x-6'>
+                                        <Image height={16} src={kye_dot} alt='' />
                                         <h1 className=' font-bold text-textcolor text-xl'>Initial Data Collections</h1>
                                     </div>
                                     <p className=' text-graytext1 pl-7'>Collect relevant data about potential employees, including identity documents, criminal history, and employment records. Our KYE platform makes this easy through digital submission, requiring minimal HR effort.</p>
                                 </div>
                                 <div className=' space-y-3'>
-                                    <div className=' flex  space-x-4'>
-                                        <Image height={14} src={kye_dot} alt='' />
+                                    <div className='space-x-6'>
+                                        <Image height={16} src={kye_dot} alt='' />
                                         <h1 className=' font-bold text-textcolor text-xl'>Verification Process</h1>
                                     </div>
                                     <p className=' text-graytext1 pl-7'>Using our extensive data networks and AI-driven technologies, Agregar runs identity, employment, and criminal background checks in real-time, ensuring the accuracy of all results.</p>
                                 </div>
                                 <div className=' space-y-3'>
-                                    <div className=' flex  space-x-4'>
-                                        <Image height={14} src={kye_dot} alt='' />
+                                    <div className='space-x-6'>
+                                        <Image height={16} src={kye_dot} alt='' />
                                         <h1 className=' font-bold text-textcolor text-xl'>Real-Time Results</h1>
                                     </div>
                                     <p className=' text-graytext1 pl-7'>Receive detailed reports that include criminal history, employment verification, address validation, and any other requested checks. Our platform provides real-time feedback, minimizing delays in your hiring process.
                                     </p>
                                 </div>
                                 <div className='pl-7'>
-                                    <div className=' flex  space-x-4'>
+                                    <div className='space-x-6'>
                                         <h1 className=' font-bold text-textcolor text-xl'>Continuous Monitoring (Optional)</h1>
                                     </div>
                                     <p className=' text-graytext1 '>For ongoing employees, our StayScreened service ensures you stay compliant by running continuous checks throughout an employee’s tenure, alerting you to any potential risks.

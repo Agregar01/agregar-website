@@ -69,7 +69,7 @@ const page = () => {
                     </div>
 
                 </div>
-                <Image alt="" src={geofy_vector} />
+                <Image alt="" src={geofy_vector}  className=' w-full' />
             </div>
             <div className=' px-2 lg:px-44'>
                 <div className=' py-12 lg:py-20'>
@@ -85,19 +85,25 @@ const page = () => {
 
                     </div>
                 </div>
-                <div>
+                <div className=' py-12 lg:py-20'>
                     <GeofyListTile title='Why Choose Geofy?' />
-
+                    <h1 className='text-base lg:text-2xl font-light pt-6'>In today’s fast-paced business environment, having accurate address verification is crucial. Geofy not only enhances the security of your operations but also streamlines processes by providing real-time verification of physical addresses.</h1>
+                </div>
+                <div>
+                <GeofyListTile title=' Key Features' />
+                </div>
+                <div>
+                    
                     <div className=' grid grid-cols-10 gap-6 lg:gap-7'>
                         <div className=' col-span-10 lg:col-span-6 flex flex-col h-full'>
-                            <h1 className='text-[#6B5A00]  font-semibold text-2xl lg:text-4xl mt-auto'>Obtain comprehensive location recording using GEO data.</h1>
+                            <h1 className='text-[#6B5A00]  font-semibold text-2xl lg:text-4xl mt-auto'>4D GIS Technology:</h1>
                         </div>
                         <div className=' col-span-8 lg:col-span-4'>
                             <Image src={geofy_mobile} alt='' height={250} />
                         </div>
 
                     </div>
-                    <h1 className=' pt-3 lg:pt-10 text-base lg:text-2xl font-light'>In today’s fast-paced business environment, having accurate address verification is crucial. Geofy not only enhances the security of your operations but also streamlines processes by providing real-time verification of physical addresses.</h1>
+                    <h1 className=' pt-3 lg:pt-10 text-base lg:text-2xl font-light'>Geofy leverages four-dimensional Geographic Information System (GIS) technology to visualize and analyze data in real time. This allows for comprehensive insights into geographic locations and address validity.</h1>
                 </div>
                 <div className=' lg:pt-12 pt-6'>
                     <div className=' grid grid-cols-10 gap-6 lg:gap-7'>
@@ -114,21 +120,51 @@ const page = () => {
                 <div className=' lg:pt-12 pt-6'>
                     <div className=' grid grid-cols-10 gap-6 lg:gap-7'>
                         <div className=' col-span-10 lg:col-span-6 flex flex-col h-full'>
-                            <h1 className='text-[#6B5A00]  font-semibold text-2xl lg:text-4xl mt-auto'>Leading HRMS products are compatible with data protection standards.</h1>
+                            <h1 className='text-[#6B5A00]  font-semibold text-2xl lg:text-4xl mt-auto'>Asset Verification</h1>
                         </div>
                         <div className=' col-span-8 lg:col-span-4'>
                             <Image src={data_geofy} alt='' height={250} />
                         </div>
 
                     </div>
-                    <h1 className=' pt-3 lg:pt-10 text-base lg:text-2xl font-light'>Geofy adheres to strict data security guidelines and complies with all applicable international standards. Footprints is available as a standalone web application and can also be connected via APIs to your current HRMS tool.</h1>
+                    <h1 className=' pt-3 lg:pt-10 text-base lg:text-2xl font-light'>Whether it’s verifying homes, offices, or any other assets, Geofy provides detailed verification reports that include photographic evidence, GPS coordinates, and additional documentation as needed.</h1>
                 </div>
+                <div>
+                   
+                    <div className=' grid grid-cols-10 gap-6 lg:gap-7'>
+                        <div className=' col-span-10 lg:col-span-6 flex flex-col h-full'>
+                            <h1 className='text-[#6B5A00]  font-semibold text-2xl lg:text-4xl mt-auto'>Real-time Tracking and Reporting: </h1>
+                        </div>
+                        <div className=' col-span-8 lg:col-span-4'>
+                            <Image src={geofy_mobile} alt='' height={250} />
+                        </div>
+
+                    </div>
+                    <h1 className=' pt-3 lg:pt-10 text-base lg:text-2xl font-light'>Our user-friendly dashboard allows clients to track verification requests in real time, receive instant notifications, and access comprehensive reports on the verification status.</h1>
+                </div>
+
+                <div>
+                   
+                    <div className=' grid grid-cols-10 gap-6 lg:gap-7'>
+                        <div className=' col-span-10 lg:col-span-6 flex flex-col h-full'>
+                            <h1 className='text-[#6B5A00]  font-semibold text-2xl lg:text-4xl mt-auto'>Customized Verification Solutions:  </h1>
+                        </div>
+                        <div className=' col-span-8 lg:col-span-4'>
+                            <Image src={geofy_mobile} alt='' height={250} />
+                        </div>
+
+                    </div>
+                    <h1 className=' pt-3 lg:pt-10 text-base lg:text-2xl font-light'>Tailored verification services that meet your specific business needs, whether for KYC processes, loan approvals, or insurance claims.</h1>
+                </div>
+               
+                
                 <div className=' pt-8 lg:pt-20 '>
-                    <GeofyListTile title='How Geofy Works' />
+                    <GeofyListTile title='Benefits of Geofy' />
                     <div className=' px-2 lg:px-20'>
                         <div className=' grid grid-cols-10 my-7 lg:my-10'>
                             <div className=' col-span-10 lg:col-span-6'>
-                                <h1 className=' text-2xl font-bold'>Geofy is provided with the candidate's information and verified cellphone number.</h1>
+                                <h1 className=' text-base lg:text-2xl font-bold'>Enhanced Security: 
+                                With accurate address verification, businesses can reduce the risk of fraud, identity theft, and ensure compliance with regulatory requirements.</h1>
                             </div>
                             <div className=' col-span-10 lg:col-span-4'>
                                 <Image src={undraw1} alt='' height={250} />
@@ -140,12 +176,14 @@ const page = () => {
                                 <Image src={undraw2} alt='' height={250} />
                             </div>
                             <div className=' col-span-10 lg:col-span-6'>
-                                <h1 className=' text-2xl font-bold'>On their registered mobile number, the applicant gets an auto-populated form with candidacy details.</h1>
+                                <h1 className=' text-base lg:text-2xl font-bold'>Increased Efficiency: 
+                                Streamline your processes by leveraging our integrated platform, reducing the time and resources spent on address verification.</h1>
                             </div>
                         </div>
                         <div className=' grid grid-cols-10 my-7 lg:my-10'>
                             <div className=' col-span-10 lg:col-span-6'>
-                                <h1 className=' text-2xl font-bold'>Candidate completes additional fields as necessary, confirms the information with a selfie, photo ID, and a live snapshot of their address, and then uploads the form.</h1>
+                                <h1 className=' text-base lg:text-2xl font-bold'>Improved Accuracy: 
+                                Combining technology with a dedicated workforce ensures that address verifications are not only accurate but also reliable, providing peace of mind for your operations</h1>
                             </div>
                             <div className=' col-span-10 lg:col-span-4'>
                                 <Image src={undraw3} alt='' height={250} />
@@ -156,13 +194,15 @@ const page = () => {
                                 <Image src={undraw4} alt='' height={250} />
                             </div>
                             <div className=' col-span-10 lg:col-span-6'>
-                                <h1 className=' text-2xl font-bold'>GPS data are immediately recorded when a form is submitted. triangulating several data points to capture the location</h1>
+                                <h1 className=' text-base lg:text-2xl font-bold'>Cost-Effective Solutions: 
+                                Reduce operational costs associated with manual verifications and enhance productivity by automating the verification process.</h1>
                             </div>
 
                         </div>
                         <div className=' grid grid-cols-10 my-7 lg:my-10'>
                             <div className=' col-span-10 lg:col-span-6'>
-                                <h1 className=' text-2xl font-bold'>The captured location is digitally confirmed.</h1>
+                                <h1 className=' text-base lg:text-2xl font-bold'>Scalability: 
+                                Geofy can adapt to your growing business needs, easily scaling to handle large volumes of verification requests without compromising quality.</h1>
                             </div>
                             <div className=' col-span-10 lg:col-span-4'>
                                 <Image src={undraw5} alt='' height={250} />
@@ -194,12 +234,12 @@ const page = () => {
                 </div>
                 <div className=' pt-9 lg:pt-20'>
                     <div>
-                        <h1 className=' font-bold text-2xl lg:text-4xl text-[#6B5A00] pb-4'>Solutions Tailored to your needs</h1>
+                        <h1 className=' font-bold text-2xl lg:text-4xl text-[#6B5A00] pb-4'>Get Started with Geofy</h1>
                         <div className=' border-b border-[#555aa6]'>
 
                         </div>
-                        <div className=' w-full lg:w-[50%] py-6'>
-                            <h1 className=' text-base lg:text-2xl font-light'>Created by a team of Ghanaian technology innovators and verification experts, our platform helps you hire at scale, improve compliance, and streamline operations.</h1>
+                        <div className=' w-full  py-6'>
+                            <h1 className=' text-base lg:text-2xl font-light'>Discover how *Geofy* can transform your address verification processes and enhance your business's operational efficiency. Contact us today for more information or to request a demo.</h1>
                         </div>
                     </div>
                 </div>
@@ -249,9 +289,8 @@ const page = () => {
                 </div>
                 <div className=' flex items-center justify-end mt-10 mb-4'>
                     <div className=' flex items-center space-x-8'>
-                        <h1 className=' text-xl text-[#CB9F04] font-bold cursor-pointer hover:underline'>Solutions</h1>
-                        <h1 className=' text-xl text-[#CB9F04] font-bold cursor-pointer hover:underline'>Login</h1>
-                        <h1 className=' text-xl text-[#CB9F04] font-bold cursor-pointer hover:underline'>About Our Company</h1>
+                        <h1 className=' text-xl text-[#CB9F04] font-bold cursor-pointer hover:underline'>Agregar Technologies – Elevating Standards in Address Verification</h1>
+                       
                     </div>
                 </div>
                 <div className=' border-b border-[#555AA6]'>

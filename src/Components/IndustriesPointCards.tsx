@@ -1,7 +1,9 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import kye_dot from "../assets/kye_dot.png";
 import Image from 'next/image';
 import line from "../assets/line.png";
+
 
 interface Props {
     header?: string;
@@ -10,6 +12,8 @@ interface Props {
 }
 
 const IndustriesPointCards: React.FC<Props> = ({ header, description, showdescription }) => {
+
+   
     return (
         <div className=' border-b border-[#dddddd]'>
             <div className=' flex items-center space-x-4'>
