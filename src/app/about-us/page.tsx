@@ -1,7 +1,7 @@
 "use client"
 import Footer from '@/Components/Footer';
 import Header from '@/Components/Header';
-import React from 'react';
+import React, { useState } from 'react';
 import aboutUsImage from "../../assets/about_us_image.png";
 import Image from 'next/image';
 import about_check from "../../assets/about_check.png";
@@ -48,6 +48,14 @@ import ScrollToTopButton from '@/Components/ScrollToTopButton';
 
 const page: React.FC = () => {
     const router = useRouter();
+    const [data, setData] = useState<string | null>(null);
+    const storageKey = "myData";
+
+    // Save data to localStorage
+    const saveToLocalStorage = (value: string) => {
+        localStorage.setItem(storageKey, value);
+        setData(value);
+    };
 
     // <TeamCards image memberName='Fredrick Allotey' memberRole='Chief Technology Officer' memberImage={member5} />
     // <TeamCards image memberName='Thelma Nunoo' memberRole='Head,Commercial' memberImage={member6} />
@@ -127,6 +135,33 @@ const page: React.FC = () => {
         },
 
 
+    ]
+
+    const Teams_Data2 = [
+
+        {
+            memberName: "David Hutchful",
+            memberRole: 'Board Chairman',
+            memberImage: member1,
+            details: "David Hutchful is an accomplished entrepreneur, design thinker, and software developer with a deep commitment to innovating solutions that are informed by a nuanced understanding of socio-economic and cultural contexts. With over 20 years of experience in design and software development, he has successfully created award-winning, innovative platforms in Finance, Agriculture, and Health.As the current CTO and Co-founder of Yemaachi Biotech, David leads the technological vision and strategy, driving the development of cutting-edge solutions that address critical challenges in the biotech sector. His expertise in design thinking enables him to approach complex problems creatively, ensuring that solutions are not only effective but also resonate with the communities they serve.As the Board Chairman of Agregar Technologies, David’s unique blend of technical knowledge and strategic insight will be invaluable. His passion for innovation and his proven ability to align technology with user needs will help guide Agregar Technologies in developing transformative solutions. David's leadership will foster a culture of collaboration and creativity, empowering the board and team to navigate the challenges of the tech landscape effectively."
+        },
+        {
+            memberName: "Harry Baiden",
+            memberRole: 'Chief Executive Officer',
+            memberImage: member2,
+            details: "Harry R. Baiden is the Founder and CEO of Agregar Technologies, boasting a distinguished career spanning over 15 years in business leadership. Renowned for his expertise in business development, operations, and marketing, he is recognized as a visionary within the industry.Harry's professional journey commenced with significant roles at prominent institutions in the USA, including Wells Fargo (formerly Wachovia Bank), Patrick Auto Group, and T-Mobile. These experiences endowed him with invaluable insights into business dynamics and customer-centric strategies.A defining characteristic of Harry is his adeptness in driving growth and implementing innovative business strategies. His unwavering commitment to excellence and sense of responsibility have consistently set him apart. His international business acumen, coupled with a deep understanding of customer needs, distinguishes him as a leader with a unique skill set.Harry played a pivotal role in the launch of Yango in Ghana, serving as a market and launch advisor. His contributions were instrumental in establishing the brand's robust initial customer base, showcasing his proficiency in market entry and expansion.He holds a Bachelor's Degree in Business Administration and Management, with a minor in Marketing. Additionally, Harry is a member of the National Association of Professional Background Screeners (NAPBS), reflecting his dedication to upholding industry best practices and ethical standards.In 2021, Harry R. Baiden was honored with the prestigious 40 under 40 award in the telecom and mobile development category, recognizing his exceptional contributions to the industry and his relentless pursuit of innovation."
+        },
+        {
+            memberName: "Adu Ampofu",
+            memberRole: 'Board Member',
+            memberImage: member3,
+            details: "Adu is an experienced Compliance & Governance Specialist with extensive expertise in corporate and commercial law. She has a keen interest in the evolving fields of technology and startup law. Additionally, she serves as the Managing Director and visionary founder of Velia Consulting Limited, a reputable consultancy firm specializing in Governance, Risk Management, and Compliance, based in Ghana.Adu's legal proficiency spans various jurisdictions, as she brings over a decade of legal experience and holds bar certifications in both England & Wales and the Republic of Ghana."
+        }, {
+            memberName: "Kwame Baiden",
+            memberRole: 'Board Member',
+            memberImage: member4,
+            details: "Meet Kwame, a seasoned Business Analyst at the esteemed Ecowas Bank for Investment and Development. In addition to his role in the banking sector, Kwame is a dynamic entrepreneur with a keen focus on global markets.Kwame shines as a leader in strategy, critical thinking, and systems analysis, bringing invaluable insights to any organization fortunate to collaborate with him. He also holds the position of Project Management Lead at Datamines, a forward-thinking startup specializing in cutting-edge market research.With his remarkable analytical skills and unwavering entrepreneurial drive, Kwame is dedicated to empowering businesses to thrive in today's rapidly evolving global marketplace."
+        }
     ]
     return (
         <div className=' outfit  bg-background'>
@@ -275,7 +310,7 @@ const page: React.FC = () => {
                             </div>
                             <div className=' col-span-10 lg:col-span-6'>
                                 <div className=' space-y-4'>
-                                    <h1 className=' text-textcolor font-bold text-3xl '>CEO'S Statement</h1>
+                                    <h1 className=' text-textcolor font-bold text-3xl '>CEO’<span className='text-xl font-extrabold'>S</span> Statement</h1>
                                     <h1 className='text-graytext1 pt-4 lg:pt-8 text-base'>As the CEO of Agregar Technologies, I am deeply inspired by the remarkable journey we’ve embarked on in the field of Regulatory Technology. Our mission to redefine how businesses approach customer, employee, business and vendor onboarding has led us on an extraordinary adventure, and I’m thrilled to share some insights about our company and the industry we’re influencing.
                                         In a time where regulatory challenges are constantly evolving, we stand at the forefront of innovation, armed with a profound understanding of the regulatory landscape. Our dedication to technological progress is steadfast. We’re not merely a technology company; we are architects of trust and compliance.
                                         Our journey began in 2022, and since then, we’ve achieved significant milestones. Demonstrating our capacity to lead digital transformation in the industry, we introduced Empverify, which fully digitizes manual verification processes. However, our efforts didn’t stop there. We expanded our portfolio with groundbreaking solutions like Validar, a comprehensive risk management solution, and Geofy, a digital and physical address verification solution. These additions underscore our commitment to delivering comprehensive and state-of-the-art solutions to our clients.
@@ -328,10 +363,36 @@ const page: React.FC = () => {
                                 <h1 className=' text-2xl lg:text-4xl text-secondary font-bold '>Board Members</h1>
                             </div>
                             <div className=' grid grid-cols-1 lg:grid-cols-4  gap-5 lg:gap-8'>
-                                <TeamCards image memberRole='Board Chairman' memberName='David Hutchful' memberImage={member1} />
-                                <TeamCards image memberName='Harry Baiden' memberRole='Chief Executive Officer' memberImage={member2} />
-                                <TeamCards image memberName='Adu Ampofu' memberRole='Board Member' memberImage={member3} />
-                                <TeamCards image memberName='Kwame Baiden' memberRole='Kwame Baiden' memberImage={member4} />
+                                {Teams_Data2.map((list) => {
+                                    //  const handleLinkClick = () => {
+                                    //     // Ensure it only runs in the browser
+                                    //     if (typeof window !== "undefined") {
+                                    //         // Assuming `list.memberImage` is a path or URL
+                                    //         if (typeof list.memberImage === "string") {
+                                    //             localStorage.setItem("memberImage", list.memberImage); // Store the string URL/path
+                                    //         }
+                                    //     }
+                                    // };
+                                
+                                    return (
+                                        <Link 
+                                        // onClick={handleLinkClick}
+                                        href={{
+                                            pathname: '/team-profile',
+                                            query: {
+                                                memberName: list.memberName,
+                                                memberRole: list.memberRole,
+                                                details: list.details,
+                                                // memberImage: list.memberImage
+                                            }
+                                        }}>
+                                            <TeamCards
+                                                image memberName={list.memberName} memberImage={list.memberImage} memberRole={list.memberRole}
+                                            />
+                                        </Link>
+                                    );
+                                })
+                                }
 
                             </div>
                         </div>
@@ -347,7 +408,8 @@ const page: React.FC = () => {
                                             query: {
                                                 memberName: list.memberName,
                                                 memberRole: list.memberRole,
-                                                details: list.details
+                                                details: list.details,
+                                                // memberImage: list.memberImage
                                             }
                                         }}>
                                             <TeamCards

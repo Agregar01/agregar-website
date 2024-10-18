@@ -3,7 +3,7 @@ import Footer from '@/Components/Footer';
 import Header from '@/Components/Header';
 import MobileHeader from '@/Components/MobileComponents/MobileHeader';
 import aboutUsImage from "../../assets/about_us_image.png";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import member1 from "../../assets/member1.png";
 import member2 from "../../assets/member2.png";
@@ -36,8 +36,19 @@ const page = () => {
     // Access query parameters
     const memberName = searchParams.get('memberName');
     const memberRole = searchParams.get('memberRole');
-    const memberImage = searchParams.get('memberImage');
+    // const memberImage = searchParams.get('memberImage');
     const details = searchParams.get("details");
+
+
+    const [memberImage, setMemberImage] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            // Retrieve the image from localStorage
+            const storedImage = localStorage.getItem("memberImage");
+            setMemberImage(storedImage);
+        }
+    }, []);
 
     return (
         <div className='outfit bg-background'>
@@ -49,11 +60,13 @@ const page = () => {
                 <Image src={aboutUsImage} alt='' />
                 <div className='lg:px-44 px-2'>
                     <div className=' my-5 lg:mt-10 lg:mb-32'>
-                        <h1 className=' text-2xl lg:text-4xl text-secondary font-bold py-7'>Team Member Profile</h1>
+                        <h1 className=' text-2xl lg:text-4xl text-secondary font-bold py-7'>{`${memberName}'s`} Profile</h1>
                         <div>
                             <div className=' grid grid-cols-10 gap-6'>
                                 <div className=' col-span-10 lg:col-span-3'>
-                                    <TeamCards2 image memberName={memberName} memberRole={memberRole}  />
+                                    <TeamCards2   
+                                    // memberImage={memberImage || ""} 
+                                    image memberName={memberName} memberRole={memberRole}  />
                                 </div>
                                 <div className=' col-span-10 lg:col-span-7'>
                                     <div className=' bg-white px-4 py-8 rounded-[8px]'>

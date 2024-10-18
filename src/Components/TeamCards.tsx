@@ -14,7 +14,7 @@ interface Props {
 
 const TeamCards: React.FC<Props> = ({ memberImage, memberName, memberRole, image, onClick }) => {
     return (
-        <div onClick={onClick} className=' bg-white rounded-[9px] cursor-pointer hover:transition-transform transform hover:scale-110 duration-300'>
+        <div onClick={onClick} className=' bg-white rounded-[9px] cursor-pointer hover:transition-transform transform hover:scale-110 duration-300 h-[390px]'>
             {image ?
                 <div className=' grid place-items-center'>
                     <Image width={210} height={210} src={memberImage} alt='no image' />
